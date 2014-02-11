@@ -26,7 +26,7 @@ namespace Loto
 
         public void setValue(int value)
         {
-            Label lbl = (Label)this.FindName("afficheur");
+            Label lbl = (Label)this.FindName("afficheur");            
             lbl.Content = value.ToString();
         }
 

@@ -16,7 +16,7 @@
 
     <Viewbox Stretch="Fill">
         
-            <Label Content="90" Name="afficheur" Template="{StaticResource JetonTemplate}"/>
+            <Label Content="90" Foreground="Yellow"  Name="afficheur" Template="{StaticResource JetonTemplate}"/>
                         
     </Viewbox>
 </Window>

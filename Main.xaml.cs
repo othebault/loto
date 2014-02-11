@@ -40,25 +40,16 @@ namespace Loto
                     thickness.Left = 4;
                     thickness.Right = 4;
                     btn.Margin = thickness;
-                    btn.Click += Button_Click;
+                    btn.Click += ClickNumero;
 
                     setNormal(btn);
                 }
             }
         }
 
-        private void setNormal(Button btn)
-        {
-            btn.FontSize = 18;
-            btn.Background = Brushes.White;
-            btn.FontWeight = FontWeights.Normal;
-            btn.FontStyle = FontStyles.Normal;
-            btn.Foreground = Brushes.Black;
-        }
-
         private int currentValue = 0;
 
-        private void Button_Click(object sender, RoutedEventArgs e)
+        private void ClickNumero(object sender, RoutedEventArgs e)
         {
             Button btn = (Button)sender;
             currentValue = Convert.ToInt32(btn.Content);
@@ -73,12 +64,27 @@ namespace Loto
             selectButton(btn);
         }
 
+        private void efface(object sender, RoutedEventArgs e)
+        {
+            Button btn = (Button)this.FindName("btn" + currentValue.ToString());
+            setNormal(btn);
+        }
+
         private void selectButton(Button btn)
         {
             btn.Background = Brushes.Yellow;
             btn.FontWeight = FontWeights.Bold;
-            btn.FontStyle = FontStyles.Italic;
-            btn.Foreground = Brushes.Turquoise;
+            btn.FontStyle = FontStyles.Normal;
+            btn.Foreground = Brushes.Blue;
+        }
+
+        private void setNormal(Button btn)
+        {
+            btn.FontSize = 18;
+            btn.Background = Brushes.White;
+            btn.FontWeight = FontWeights.Normal;
+            btn.FontStyle = FontStyles.Normal;
+            btn.Foreground = Brushes.Black;
         }
 
         private void Button_Click_2(object sender, RoutedEventArgs e)

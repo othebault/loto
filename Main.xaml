@@ -131,7 +131,8 @@
             </Grid>
             <ToolBarPanel Orientation="Horizontal" VerticalAlignment="Bottom" Height="25">
                 <Button Margin="3" Click="Button_Click_2">RAZ</Button>
-                <Button Margin="3" Click="Button_Click_1">Confirmer</Button>
+                <Button Margin="3" Click="Button_Click_1">Validation</Button>
+                <Button Margin="3" Click="efface">Efface</Button>
             </ToolBarPanel>
         </StackPanel>
     </Viewbox>
