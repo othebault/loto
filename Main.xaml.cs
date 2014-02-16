@@ -91,6 +91,12 @@ namespace Loto
         {
             raz();
         }
+
+        private void suivante(object sender, RoutedEventArgs e)
+        {
+            Transition fenetre = new Transition();            
+            fenetre.Show();
+        }
     }
 }
 
