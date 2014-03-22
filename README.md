@@ -32,10 +32,11 @@ Historique
 ----------
 
 Il est le portage de la version V1 qui était une simple feuille excel avec des macros. Cette version étant une refonte complète
-la numérotation des versions reprend à 2.x
+la numérotation des versions reprend à 1.1
 
 Versions
 --------
 
-V 2.0 : Création pour démo
-V 2.1 : Correction affichage
+V 1.1 : Création pour démo
+
+V 1.2 : Correction affichage
