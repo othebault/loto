@@ -4,7 +4,7 @@
   <description asmv2:publisher="Olivier THEBAULT" asmv2:product="Loto" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <deployment install="true" co.v1:createDesktopShortcut="true" />
   <dependency>
-    <dependentAssembly dependencyType="install" codebase="Application Files\Loto_1_2_0_0\Loto.exe.manifest" size="4459">
+    <dependentAssembly dependencyType="install" codebase="Loto.exe.manifest" size="4459">
       <assemblyIdentity name="Loto.exe" version="1.2.0.0" publicKeyToken="0000000000000000" language="fr-FR" processorArchitecture="msil" type="win32" />
       <hash>
         <dsig:Transforms>
